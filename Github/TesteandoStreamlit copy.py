@@ -8,7 +8,7 @@ st.title("📊 Dashboard de Vendedores")
 # --- FUNCIÓN PARA CARGAR DATOS ---
 @st.cache_data
 def cargar_datos():
-    ruta = "/Users/diegomakita/Documents/Class Projects/Github/vendedores.xlsx"
+    ruta = "vendedores.xlsx"
     if not os.path.exists(ruta):
         st.error(f"No se encontró el archivo: {ruta}")
         return None
